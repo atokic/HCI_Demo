@@ -10,9 +10,7 @@ const GalleryContent = () => (
         {titles.map((title, index) =>
             <GalleryContainer title={title} isGray={index % 2 === 0}
             start={index * 4}
-            end={(index + 1) === 3
-                ? (index + 4) * 4
-                : (index + 1) * 4}
+            end={(index + 1) === 3 ? (index + 4) * 4 : (index + 1) * 4}
             />
         )}
     </main>

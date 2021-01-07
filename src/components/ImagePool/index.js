@@ -7,7 +7,7 @@ import styles from './style.module.css'
 const ImagePool = ({start, end}) => {
     const data = useStaticQuery(graphql`
         query {
-          myImages: allInstaNode(limit: 24, filter: {mediaType: {eq: "GraphImage"}}) {
+          myImages: allInstaNode(limit: 48, filter: {mediaType: {eq: "GraphImage"}}) {
             edges {
               node {
                 localFile {
